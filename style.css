@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    font-family: 'Space Mono', monospace;
+    background-color: hsl(185, 41%, 84%);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    margin: 16.3em 0 8em 0;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 920px;
+    min-width: 375px;
+    background-color: white;
+    border-radius: 2.5em;
+    box-shadow: 0px 32px 43px rgba(79, 166, 175, 0.200735);
+    gap: 3.6em;
+    padding: 3.3em;
+}
+
+.input-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    padding: 1.3em;
+}
+
+.output-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    background-color: hsla(183, 100%, 15%, 1);
+    border-radius: 1.5em;
+    padding: 3.9em 4em;
+}
+
+.bill-section + .bill-section {
+    margin-top: 4.175em;
+}
+
+.output-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.label {
+    color:hsla(186, 14%, 43%, 1);
+    font-size: 1.6rem;
+}
+
+.input-field {
+    background-color: hsla(185, 38%, 97%, 1);
+    border: none;
+    border-radius: 0.2em;
+    outline: none;
+    padding: 0.2em .8em;
+    width: 100%;
+    font-family: 'Space Mono', monospace;
+    font-size: 2.4rem;
+    text-align: right;
+    color: hsl(183, 100%, 15%);
+    margin-top: .3em;
+}
+
+.input-field::placeholder {
+    color: hsl(184, 14%, 56%);
+    opacity: .8;
+}
+
+.input-field:focus, .input-btn:focus {
+    border: 2px solid hsla(172, 67%, 45%);
+}
+
+.custom {
+    caret-color: hsla(172, 67%, 45%, 1);
+}
+
+.icon-dollar {
+    background-image: url(icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-position: 5% 50%;
+}
+
+.icon-person {
+    background-image: url(icon-person.svg);
+    background-repeat: no-repeat;
+    background-position: 5% 50%;
+}
+
+.percent-btns {
+    display: grid;
+    grid-template-columns: repeat(3, 11.7em);
+    gap: 1.5em;
+    margin-top: 1.5em;
+}
+
+.btn {
+    background-color: hsla(183, 100%, 15%, 1);
+    color: hsl(0, 0%, 100%);
+    font-family: 'Space Mono', monospace;
+    font-size: 2.5rem;
+    border: none;
+    border-radius: 0.2em;
+    padding: 0.23em 0.06em;
+}
+
+.active, .btn:hover {
+    background-color:  hsla(172, 67%, 45%, 1);
+    color: hsla(183, 100%, 15%, 1);
+    cursor: pointer;
+}
+
+.input-btn {
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(183, 100%, 15%);
+    border: none;
+    outline: none;
+    border-radius: 0.2em;
+    font-size: 2.4rem;
+    font-family: 'Space Mono', monospace;
+    text-align: right;
+    padding: 0em 0.5em;
+}
+
+.input-btn::placeholder {
+    color: hsla(180, 18%, 40%, 1);
+}
+
+.par {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.6rem;
+}
+
+.per-person {
+    color: hsla(183, 15%, 56%, 1);
+    font-size: 1.3rem;
+}
+
+#tip, #total {
+    color: hsla(172, 67%, 45%, 1);
+    font-size: 4.8rem;
+}
+
+.reset-btn {
+    background-color: hsla(172, 67%, 46%, 1);
+    color: hsla(183, 100%, 15%, 1);
+    border-radius: 0.2em;  
+    border: none;
+    font-family: 'Space Mono', monospace;
+    font-size: 2rem;
+    padding: .5em;
+    margin-top: 4.5em;
+}
+
+.reset-btn:hover {
+    background-color: hsla(172, 61%, 77%, 1);
+}
+
+.reset-btn:disabled {
+    background-color: hsl(183,79%,24%);
+    color: hsl(182,92%,15%);
+}
+
+.error-msg {
+    font-size: 1.6rem;
+    color:hsla(13, 70%, 61%, 1);
+    display: none;
+}
+
+.input-field-error-msg, .input-field-error-msg:focus {
+    border: 2px solid hsla(13, 70%, 61%, 1);
+}
+
+
+
+@media all and (max-width: 800px) {
+    .logo {
+        margin: 5em 0 3em 0;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 2em;
+    }
+    .percent-btns {
+        display: grid;
+        grid-template-columns: repeat(2, 14.7em);
+    }
+
+    .bill-section + .bill-section {
+        margin-top: 3.4em;
+    }
+} 
+
+
+
+
+
