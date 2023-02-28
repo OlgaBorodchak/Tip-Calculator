@@ -179,6 +179,7 @@ main {
 
 .reset-btn:hover {
     background-color: hsla(172, 61%, 77%, 1);
+    cursor: pointer;
 }
 
 .reset-btn:disabled {
