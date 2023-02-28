@@ -92,6 +92,9 @@ function resetForm() {
     billInput.value = "";
     numberOfPeople.value = "";
     customTip.value = "";
+    tip = 0;
+    people = 0;
+    bill = 0;
     numberOfPeople.classList.remove("input-field-error-msg");
     errorMsg.style.display = "none";
     setTimeout(() => reset.disabled = true, 300)
